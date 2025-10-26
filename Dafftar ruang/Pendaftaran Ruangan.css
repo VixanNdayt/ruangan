@@ -1,0 +1,133 @@
+body{
+    
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+.navbarhide{
+    display: hide;
+}
+
+.logonnavbar{
+    width: 80px;
+    height: 80px;
+}
+
+.stembayonavbar{
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.hideon800p{
+    margin-right: 6px;
+    background-color: transparent;
+    border: none; 
+    transition-duration: 0.4s;
+    padding: 10px;
+}
+
+.hideon800p:hover{
+    background-color: #f5e9d3;
+    box-shadow: 4px #6b6b6b;
+    color: #6b6b6b;
+    border-radius: 12px;
+}
+
+.navbarR{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100hv;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba( 255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+} 
+
+.inh{
+    font-size: xx-large;
+}
+
+.inhp{
+    font-size: medium;
+}
+
+.ruanganb1{
+    background-image: linear-gradient(to right, #CE313D, #F36B5F, #E76259);
+    color: white;
+}
+
+.containerruang{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.img1{
+    width: 100;
+}
+
+.ruanganb1ck{
+    display: flex;
+    flex-direction: column;
+}
+@media(max-width: 800px){
+    .logonnavbar{
+        width: 50px;
+        height: 50px;
+    }
+
+    .stembayonavbar{
+        font-size: medium;
+    }
+
+    .hideon800p{
+        display: none;
+    }
+
+    .inh{
+        font-size: large;
+    }
+
+    .inhp{
+        font-size: small;
+    }
+
+    .containerruang{
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 60px;
+    }
+
+    .ruanganb1{
+        max-width: 80%;
+        margin-bottom: 10px;
+    }
+    
+    .ruanganb1ck{
+        display: flex;
+        flex-direction: row;
+        font-size: x-small;
+    }
+
+    .img1{
+        width: 40px;
+    }
+}
